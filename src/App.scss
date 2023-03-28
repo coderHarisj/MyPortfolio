@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$height: 450px;
+$width: 450px;
+$font-family: 'Open Sans', sans-serif;
+$position-relative: relative;
+$position-sticky: sticky;
+
+body {
+  height: auto;
+  width: auto;
+  background-color: #e6e6e6;
+  overflow: visible;
+  padding-top: 80px;
+}
+
+.body-homepage {
+  .fade-up {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    animation: fade-up 1s;
+    transform: translateY(20%);
+  }
+
+  .fade-up.loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.div-profile-container {
+  position: $position-relative;
+  top: -10rem;
+}
+
+.div-title {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+
+  padding: 5px 16px;
+  width: 100%;
+  height: 55px;
+  z-index: 1;
+  top: 0px;
+
+  border-style: none;
+  box-sizing: border-box;
+  background-color: #e6e6e6;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 30px 0 rgba(0, 0, 0, 0.19);
+
+  .header-name {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    position: $position-sticky;
+    top: 0.01rem;
+    border-style: none;
+    font-family: $font-family;
+    font-size: 23px;
+    letter-spacing: 0.125rem;
+  }
+
+  p {
+    position: $position-sticky;
+    top: 0.00002rem;
+    border-style: none;
+    font-family: $font-family;
+    font-size: 14px;
+  }
+
+  .dot {
+    position: $position-sticky;
+    left: 0.2rem;
+    top: 0.2rem;
+    height: 25px;
+    width: 25px;
+    background-color: #e8aa00;
+    border-radius: 50%;
+    border-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+}
+
+.div-profile-pic {
+  position: $position-relative;
+  align-items: left;
+  left: 1rem;
+  top: 10rem;
+
+
+  img {
+    position: $position-relative;
+    top: -1rem;
+    left: 16rem;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0px -29px;
+  }
+}
+
+.about-profile {
+  h1 {
+    width: 500px;
+    height: 100px;
+    display: block;
+    position: $position-relative;
+    font-size: 100px;
+    font-family: $font-family;
+    letter-spacing: -0.023m;
+    text-align: start;
+    padding: 10px;
+    top: -26rem;
+    left: 50rem;
+  }
+
+  h2 {
+    position: $position-relative;
+    font-family: $font-family;
+    width: 200px;
+    font-size: 20px;
+    text-align: start;
+    top: -27rem;
+    left: 51rem;
+  }
+
+  .about-profile-description {
+    width: 500px;
+    height: 100px;
+    top: -28rem;
+    left: 50.5rem;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+
+  .about-profile-description {
+    display: block;
+    border-style: none;
+    position: $position-relative;
+    padding: 10px;
+    overflow-wrap: break-word;
+  }
+}
+
+
+.div-resume-component {
+  h4 {
+    font-family: $font-family;
+  }
+
+  h6 {
+    font-family: $font-family;
+  }
+
+  p {
+    font-family: $font-family;
+  }
+}
+
+.h1-resume{
+  font-family: $font-family;
+  font-size: 1rem;
+}
+
